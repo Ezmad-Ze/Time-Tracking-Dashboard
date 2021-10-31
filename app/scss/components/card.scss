@@ -1,0 +1,176 @@
+@use '../util' as *;
+
+.cards{
+    width: 100%;  
+    place-items: flex-start;  
+    transform: translateY(-7%);
+    @include breakpoint(medium){
+        max-width: 65%;
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+    @include breakpoint(large){
+        max-width: 40%;
+    }
+
+ 
+    &__card{
+        width: 100%;
+        @include breakpoint(large){
+            transform: translateY(-90%); 
+        }
+        &--img--one{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--light-red-work);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }
+            
+        }
+        &--img--two{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--soft-blue-play);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }
+            
+        }
+        &--img--three{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--light-red-study);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }
+            
+        }
+        &--img--four{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--lime-green-exercise);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }
+            
+        }
+        &--img--five{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--violet-social);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }
+            
+        }
+        &--img--six{
+            border-top-left-radius: rem(20);
+            border-top-right-radius: rem(20);
+            background-color: var(--soft-orange-selfcare);
+            display: grid;
+            img{
+                height: 79px;
+                object-fit:contain;
+                justify-self: flex-end;
+            }           
+        }
+        &--text{
+            border-radius: rem(20);
+            padding: rem(20) rem(10) rem(20);
+            background-color: var(--dark-blue);
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            transform: translateY(rem(-40));
+            row-gap: rem(5);
+            &:hover{
+                filter: brightness(200%);
+            }
+            @include breakpoint(medium){
+                grid-template-columns: 1fr 0.3fr ;
+            }
+            @include breakpoint(large){
+                place-items: flex-start;
+            }
+            &--type{
+                align-self: center;
+                justify-self: flex-start;
+                font-weight: 500;
+                font-size: rem(16);
+                order: 1;
+                padding: 0 rem(20) 0;
+                @include breakpoint(medium){
+                    grid-column: 1/2;
+                }
+                @include breakpoint(large){
+                    width: rem(150);
+                    height: rem(30);
+                    
+                }
+            }
+            &--time{
+                align-self: center;
+                justify-self: flex-start;
+                font-weight: 300;
+                font-size: rem(32);
+                padding: 0 rem(20) 0;
+                order: 3;
+                @include breakpoint(medium){
+                    grid-column: 1/2;
+                    font-size: rem(39);
+                }
+                @include breakpoint(large){
+                    width: rem(170);
+                    height: rem(60);
+                }
+            }
+            &--ellipsis{
+                justify-self: flex-end;
+                align-self: flex-start;
+                padding: 0 rem(10) 0;
+                order: 2;
+                a{
+                    opacity: 0.5;
+                    transition: 200ms ease-in-out;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 1;
+                        filter: brightness(400%);
+                    }
+                }
+            }
+            &--previous{
+                justify-self: flex-end;
+                align-self: center;
+                order: 4;
+                @include breakpoint(medium){
+                  grid-column: 4/1;
+                  grid-row: 3/3; 
+                  padding: 0 rem(20) 0; 
+                  justify-self: flex-start;
+                  font-size: rem(14);  
+                }
+                @include breakpoint(large){
+                    height: rem(30);
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@use '../util' as *;
+
+.order{
+    display: grid;
+    @include breakpoint(medium){
+        margin: 60px auto;
+        max-height: 450px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+    }
+    @include breakpoint(large){
+        margin: rem(350) rem(40) auto;
+        max-height: rem(200);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 7%;
+    }
+}
+.one{
+    @include breakpoint(medium){
+        order: 1;
+    }
+  
+}
+.two{
+    @include breakpoint(medium){
+        order: 2;
+    }
+}
+.three{
+    @include breakpoint(medium){
+        order: 3;
+    }
+}
+.four{
+    @include breakpoint(medium){
+        order: 4;
+    }
+}
+.five{
+    @include breakpoint(medium){
+        order: 5;
+    }
+}
+.six{
+    @include breakpoint(medium){
+        order: 6;
+    }
+}

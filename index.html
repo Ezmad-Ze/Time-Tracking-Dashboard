@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main class="container">
+    <section class="description">
+      <div class="description__top"> 
+        <div class="description__top--avatar">
+          <img src="./images/image-jeremy.png" alt="Jeremy's Picture">
+        </div>
+        <div class="description__top--name">
+          <span> Report for</span>
+          Jeremy Robson
+        </div>
+      </div>
+      <div class="description__list">
+        <ul>
+          <li> <a href="#" class="daily">Daily</a> </li>
+          <li> <a href="#" class="weekly">Weekly</a> </li>
+          <li> <a href="#" class="monthly">Monthly</a> </li>
+        </ul>
+      </div>
+    </section>
+    <section class="cards order">
+      <div class="cards__card one">     
+        <div class="cards__card--img--one" role="img" aria-label="Work">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Work
+          </div>
+          <div class="cards__card--text--time">
+            <span class="work-time">5</span>hrs 
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="work-pre-time">7</span>hrs
+          </div>
+        </div>      
+      </div>
+      
+      <div class="cards__card two">     
+        <div class="cards__card--img--two" role="img" aria-label="Play">
+          <img src="./images/icon-play.svg" alt="" >
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Play
+          </div>
+          <div class="cards__card--text--time">
+            <span class="play-time">1</span>hrs 
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="play-pre-time">2</span>hrs
+          </div>
+        </div>      
+      </div>
+
+      <div class="cards__card three">     
+        <div class="cards__card--img--three" role="img" aria-label="Study">
+          <img src="./images/icon-study.svg" alt="">
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Study 
+          </div>
+          <div class="cards__card--text--time">
+            <span class="study-time">0</span>hrs 
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="study-pre-time">1</span>hrs
+          </div>
+        </div>      
+      </div>
+
+      <div class="cards__card four">     
+        <div class="cards__card--img--four" role="img" aria-label="Exercise">
+          <img src="./images/icon-exercise.svg" alt="">
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Exercise
+          </div>
+          <div class="cards__card--text--time">
+            <span class="exer-time">1</span>hrs  
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="exer-pre-time">1</span>hrs  
+          </div>
+        </div>      
+      </div>
+
+      <div class="cards__card five">     
+        <div class="cards__card--img--five" role="img" aria-label="Social">
+          <img src="./images/icon-social.svg" alt="">
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Social 
+          </div>
+          <div class="cards__card--text--time">
+            <span class="social-time">1</span>hrs   
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="social-pre-time">3</span>hrs 
+          </div>
+        </div>      
+      </div>
+
+      <div class="cards__card six" >     
+        <div class="cards__card--img--six" role="img" aria-label="Self Care">
+          <img src="./images/icon-self-care.svg" alt="">
+        </div>
+        <div class="cards__card--text">
+          <div class="cards__card--text--type">
+            Self Care 
+          </div>
+          <div class="cards__card--text--time">
+            <span class="self-time">0</span>hrs  
+          </div>
+          <div class="cards__card--text--ellipsis">
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="Ellipsis"></a>
+          </div>
+          <div class="cards__card--text--previous">
+            Last <span class="calendar">day </span> - <span class="self-pre-time">1</span>hrs 
+          </div>
+        </div>      
+      </div>
+    </section>   
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ezmad-Ze</a>.
+  </footer>
+ 
+  <script src="./dist/script.js"></script>
+</body>
+</html>
+
