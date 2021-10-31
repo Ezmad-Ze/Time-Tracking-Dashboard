@@ -29,7 +29,7 @@
         padding: rem(40);
         z-index: 1;
         @include breakpoint(medium){
-            transition: ease-in-out 300ms;
+            //transition: ease-in-out 300ms;
             gap: rem(50);
             padding: rem(40) rem(30) rem(90);
             place-items: center;
