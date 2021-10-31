@@ -11,8 +11,9 @@
     @include breakpoint(large){
         margin: rem(350) rem(40) auto;
         max-height: rem(200);
+        max-width: rem(123);
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 7%;
+        column-gap: 16%;
     }
 }
 .one{

@@ -14,7 +14,7 @@
 	
 	@include breakpoint(large) {
 		flex-direction: row;
-		gap: 20px;
+		//gap: 20px;
 		padding: 0;
 		transform: translate(0, 0);
 	}
