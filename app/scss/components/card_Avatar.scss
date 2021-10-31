@@ -65,7 +65,7 @@
         margin: rem(20);
         transform: translateY(rem(-60));  
         @include breakpoint(medium){
-            transition: ease-in-out 100ms;
+            //transition: ease-in-out 100ms;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
